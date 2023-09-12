@@ -1,3 +1,5 @@
+package rikkei.academy;
+
 public class LinearEquationResolver {
     // Given a equation : ax + b = c
     public void calculation (double a, double b, double c) {

@@ -1,3 +1,5 @@
+package rikkei.academy;
+
 public class DayOfMonth {
     public void getDayOfMonth(int month) {
         int day = 28;
