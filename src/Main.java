@@ -1,39 +1,70 @@
-import java.util.Date;
+import rikkei.academy.VariableExercise;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int i = 10;
-        float f = 20.5f;
-        double d = 20.5;
-        boolean b = true;
-        char c = 'a';
-        String s = "Hà Nội";
+        VariableExercise hinhVuong = new VariableExercise();
+        Scanner sc = new Scanner(System.in);
 
-        // ==============="Hiển thị thời gian hê thống"=================
-        Date date = new Date();
-        System.out.println("Time now: " + date);
-        System.out.println("");
+
 
         // ==============="Khai báo và sử dụng biến"===================
-        System.out.println("i = " + i);
-        System.out.println("f = " + f);
-        System.out.println("d = " + d);
-        System.out.println("b = " + b);
-        System.out.println("s = " + s);
-        System.out.println("c = " + c);
+
+
 
         // ==============="Sử dụng toán tử"===================
-        Scanner sc = new Scanner(System.in);
-        float width, height, area;
+//
 
-        System.out.println("Enter width: ");
-        width = sc.nextFloat();
 
-        System.out.println("Enter height: ");
-        height = sc.nextFloat();
+        // Tính chu vi hình vuông
 
-        area = width * height;
-        System.out.println("area: " + area);
+//        System.out.println("Enter cạnh a: ");
+//        double a = sc.nextDouble();
+//        System.out.println("Enter cạnh b: ");
+//        double b = sc.nextDouble();
+//
+//        double chuvi = (a+b)*2;
+//
+//        System.out.println( "Chu vi hình chữ nhật là :" + chuvi);
+
+        // averageMark
+
+//        System.out.println("Enter score 1: ");
+//        double score1 = sc.nextDouble();
+//        System.out.println("Enter score 2 ");
+//        double score2 = sc.nextDouble();
+//
+//        double averageMark = (score1 + score2) / 2;
+//        System.out.println("Điểm trung bình : " + averageMark);
+//
+//        if(averageMark < 5) {
+//            System.out.println("Xếp loại yếu");
+//        }else if(averageMark < 6.5) {
+//            System.out.println("Xếp loại trung bình");
+//        }else if(averageMark < 8) {
+//            System.out.println("Xếp loại giỏi");
+//        }else if(averageMark < 9) {
+//            System.out.println("Xếp loại xuất sắc");
+//        }
+
+        //==============Kiêm tra số có chia hết 15==============
+
+//        System.out.println("Enter number ");
+//        int a = sc.nextInt();
+//
+//        if(a % 15 == 0) {
+//            System.out.println("Số " + a + " chia hết cho 3 và 5 ");
+//        }else {
+//            System.out.println("Số " + a + " không chia hết cho 3 và 5 ");
+//        }
+
+        // Chuyển đổi số thành chữ
+
+//        System.out.println("Enter number ");
+//        int numb = sc.nextInt();
+//
+//        String convertToString = Integer.toString(numb);
+//        System.out.println("String: " + convertToString );
     }
 }
