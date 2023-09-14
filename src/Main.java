@@ -15,12 +15,12 @@ public class Main {
 
         // ================= "Given a equation : ax + b = c " =================
 
-        // System.out.println("Enter a:");
-        // double a = Double.parseDouble(sc.nextLine());
-        // System.out.println("Enter b:");
-        // double b = Double.parseDouble(sc.nextLine());
-        // System.out.println("Enter c:");
-        // double c = Double.parseDouble(sc.nextLine());
+//         System.out.println("Enter a:");
+//         double a = Double.parseDouble(sc.nextLine());
+//         System.out.println("Enter b:");
+//         double b = Double.parseDouble(sc.nextLine());
+//         System.out.println("Enter c:");
+//         double c = Double.parseDouble(sc.nextLine());
 
         //  ==================="Get Day of month"==================
 
