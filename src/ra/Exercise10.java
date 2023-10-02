@@ -8,7 +8,6 @@ public class Exercise10 {
         int result = calculateExpression(expression);
         System.out.println("Kết quả của biểu thức " + expression + " là: " + result);
 
-
     }
 
         public static int calculateExpression(String expression) {
