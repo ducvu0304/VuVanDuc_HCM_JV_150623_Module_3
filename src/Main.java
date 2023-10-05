@@ -1,14 +1,13 @@
 import entity.Sort;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
-        Integer arr[] = { 64, 34, 25, 12, 22, 11 };
-        Integer[] sortArr = Sort.selectionSort(arr);
+        Integer[] arr = { 22, 1, 25, 12, 21, 11};
 
-        for (int i = 0; i < sortArr.length; i++) {
-            System.out.println(arr[i]);
-        }
+        System.out.println(Arrays.toString(Sort.bubbleSort(arr)));
 
     }
 }
