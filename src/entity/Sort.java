@@ -1,13 +1,14 @@
 package entity;
 
-import java.util.List;
+
+import java.util.Comparator;
 
 public class Sort {
-    public static <T> T[] selectionSort(T[] arr) {
+    public static <T extends Comparable> T[] selectionSort(T[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = i + 1; j < arr.length; j++) {
-                if(!arr[i].equals(arr[j])) {
-                    swap(arr, i, j);
+                if(arr[i].compareTo(arr[j]) == 1) {
+                    swapElement(arr, i, j);
                 }
             }
         }
@@ -15,15 +16,13 @@ public class Sort {
         return arr;
     }
 
-    public static <T> T[] bubbleSort(T[] arr) {
-        boolean swapped;
-
+    public static <T extends Comparable> T[] bubbleSort(T[] arr) {
         for (int i = 0; i < arr.length -1 ; i++) {
-            swapped = false;
+            boolean swapped = false;
 
             for (int j = 0; j < arr.length - i - 1 ; j++) {
-                if(arr[j].equals(arr[j+1]))  {
-                    swap(arr, j, j+1);
+                if(arr[j].compareTo(arr[j+1]) >= 1)  {
+                    swapElement(arr, j, j+1);
                     swapped = true;
                 }
             }
@@ -32,13 +31,28 @@ public class Sort {
                 break;
             }
         }
+        return arr;
+    }
+
+    public static <T extends Comparable> T[] insertionSort(T[] arr) {
+        int length = arr.length;
+
+        for (int i = 1; i < length ; i++) {
+            T key =  arr[i];
+            int j = i-1;
+            while (j >=0 && arr[j].compareTo(key) == -1) {
+                arr[j+1] = arr[j];
+                j = j-1;
+            }
+
+            arr[j+1] = key;
+        }
 
         return arr;
     }
 
 
-
-    static <T> void swap(T[] arr, int i, int j) {
+    static <T> void swapElement(T[] arr, int i, int j) {
         T temp = arr[i];
         arr[i] =  arr[j];
         arr[j] = temp;

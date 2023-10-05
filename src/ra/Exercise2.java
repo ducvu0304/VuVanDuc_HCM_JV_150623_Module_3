@@ -1,21 +1,25 @@
 package ra;
 
+import entity.Sort;
 import entity.Student;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Exercise2 {
     public static void main(String[] args) {
-        List<Student> list = new ArrayList<>();
-        list.add(new Student(1,"Nam", 90));
-        list.add(new Student(2,"Hoa", 80));
-        list.add(new Student(3,"Mây", 70));
+        Student[] arrayList = new Student[3];
+        int id = 1;
 
-        Collections.sort(list, Comparator.comparingDouble(Student::getScore));
+        arrayList[0] = new Student(id++,"Nam", 90);
+        arrayList[1] = new Student(id++,"Hoa", 70);
+        arrayList[2] = new Student(id++,"Mây", 80);
 
-        list.forEach(s -> System.out.println(s.getName()));
+        Student.selectionSort(arrayList);
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println(arrayList[i].getName() + " - " + arrayList[i].getScore());
+        }
     }
+
+
 }
