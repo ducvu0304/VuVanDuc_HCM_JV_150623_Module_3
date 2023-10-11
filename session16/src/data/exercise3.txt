@@ -1,0 +1,5 @@
+Java Character streams are the ones that are used to implement the input and output for 16-bit Unicode.
+Several classes are associated with character streams in Java, but the most commonly used classes are FileReader and FileWriter.
+Internally, the FileReader class uses FileInputStream and the FileWriter class uses FileOutputStream.
+Nevertheless, the significant contrast is that FileReader and FileWriter read and write two bytes,
+respectively.
